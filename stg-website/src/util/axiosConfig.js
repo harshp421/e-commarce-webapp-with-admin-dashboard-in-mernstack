@@ -1,4 +1,4 @@
-export const base_url="https://e-commarce-webapp-with-admin-dashboard-api.vercel.app/api/"
+export const base_url=Process.env.API_URL || "https://e-commarce-webapp-with-admin-dashboard-api.vercel.app/api/"
 
 const getTokenFromLocalStorage = localStorage.getItem("customer")
   ? JSON.parse(localStorage.getItem("customer"))
